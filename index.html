@@ -1,1 +1,25 @@
-<h1>hiiiii</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue 3 App</title>
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+
+<div id="app">
+    {{ message }}
+</div>
+
+<script>
+  Vue.createApp({
+    data() {
+      return {
+        message: 'Hello Vue 3!'
+      }
+    }
+  }).mount('#app')
+</script>
+
+</body>
+</html>
